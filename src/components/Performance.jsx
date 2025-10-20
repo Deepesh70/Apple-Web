@@ -34,7 +34,7 @@ const Performance = () => {
                 { opacity: 0, y: 10 },
                 {
                     opacity: 1,
-                    y: 0,
+                    y: 10,
                     ease: "power1.out",
                     scrollTrigger: {
                         trigger: ".content p",
@@ -54,7 +54,7 @@ const Performance = () => {
                 scrollTrigger: {
                     trigger: sectionEl,
                     start: "top bottom",
-                    end: "bottom top",
+                    end: "center center",
                     scrub: 1,
                     invalidateOnRefresh: true,
                 },
@@ -73,7 +73,6 @@ const Performance = () => {
                 const vars = {};
                 
 
-                // This is a clean, data-driven way to build the animation.
                 // If the data file has a 'left' property, add it to the animation.
                 if (typeof item.left === "number") vars.left = `${item.left}%`;
                 if (typeof item.right === "number") vars.right = `${item.right}%`;
