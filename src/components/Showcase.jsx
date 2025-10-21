@@ -7,12 +7,12 @@ const Showcase = () => {
 
     useGSAP(() => {
         if(!isTablet) {
-            const timeline = gsap.timeline({
+            const timeline = gsap.timeline({    // gsap timeline
                 scrollTrigger: {
                     trigger: '#showcase',
                     start: 'top top',
                     end: 'bottom top',
-                    scrub: true,
+                    scrub: true,        //for scroll on reverse 
                     pin: true,
                 }
             });
