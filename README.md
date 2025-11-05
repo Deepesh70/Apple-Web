@@ -1,4 +1,4 @@
-# Apple-Web
+# Apple-Web Landing page clone
 
 A small, modern single-page site built with Vite + React that showcases 3D product models and interactive UI components. This repo contains a lightweight Apple-style product showcase with Three.js model viewers and modular React components.
 
